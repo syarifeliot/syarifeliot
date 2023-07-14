@@ -4,12 +4,15 @@
     <title>KELUARGA ANWAR - Foto Folio</title>
     <style>
         /* Gaya CSS */
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f2f2f2;
-            overflow: hidden;
         }
 
         header {
@@ -159,7 +162,7 @@
 
         /* Gaya CSS untuk animasi mengikuti kursor */
         .cursor {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 30px;
