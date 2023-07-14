@@ -153,11 +153,36 @@
         .back-link {
             text-align: center;
             margin-bottom: 60px;
+            position: relative;
         }
 
         .back-link a {
             color: #f;
             text-decoration: none;
+            font-size: 16px;
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 20px;
+            animation: arrowMove 1s infinite;
+        }
+
+        @keyframes arrowMove {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
 
         /* Gaya CSS untuk animasi mengikuti kursor */
@@ -209,10 +234,11 @@
             <img src="thumbnail-video.jpg" alt="Thumbnail Video">
             <video src="Finalis DKBCI Bekasi - Syarifah Azkia Naura Firrizqiah.mp4" width="300" height="400" controls></video>
             <div class="back-link">
-                <li><a href="https://youtube.com/shorts/8xNDJ3YEaio?feature=share3" href="#">MY YOUTUBE CHANNEL</a></li>      
+                <li><a href="https://youtube.com/shorts/8xNDJ3YEaio?feature=share3" href="#">MY YOUTUBE CHANNEL</a></li>
+                <div class="arrow-icon">&#8593;</div>
             </div>
-                                                                            <a>------------------------------------------------------------</a> 
-    <a>TEMAN TEMAN DUKUNG AKU YA ,DI KONTES DUTA (DKBCI BERAKSI) TONTON VIDEO KU SEBANYAK BANYAK NYA BANTU LIKE COMAN JUGA YAA TEMAN TEMAN TRIMAKASIH</a>
+            <p>------------------------------------------------------------</p>
+            <p>TEMAN TEMAN DUKUNG AKU YA, DI KONTES DUTA (DKBCI BERAKSI) TONTON VIDEO KU SEBANYAK BANYAK NYA BANTU LIKE COMAN JUGA YAA TEMAN TEMAN TRIMAKASIH</p>
         </div>
         <div class="gallery-item">
             <img src="gambar3.png" alt="Foto 3">
